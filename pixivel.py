@@ -2,7 +2,7 @@ import requests
 import json
 
 
-# 通过Pixiv_Id返回原图,多图返回第一张
+# 通过Pixiv_Id返回原图,多图返回列表
 def search_pixivl(id):
     _id = id
     headers = {
@@ -22,8 +22,10 @@ def search_pixivl(id):
         else:
             holder = []
             for i in pages:
-                holder.append(i.get('image_urls').get('original').replace('https://i.pximg.net/',
-                                                                          'https://proxy-jp1.pixivel.moe/'))
+                holder.append(i.get('image_urls')
+                              .get('original')
+                              .replace('https://i.pximg.net/', 'https://proxy-jp1.pixivel.moe/'))
             return holder
     except:
         return 'Error'
+
