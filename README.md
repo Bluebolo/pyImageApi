@@ -2,12 +2,11 @@
 
 适用网站：
 
-- [小歪Api](https://api.ixiaowai.cn/)
+- [小歪Api](https://api.ixiaowai.cn/) `getImage.py`
 
-- [Lolicon API](https://api.lolicon.app/#/setu)
+- [Lolicon API](https://api.lolicon.app/#/setu) `getImage.py`
 
-- [Pixivel](https://pixivel.moe/)
+- [Pixivel](https://pixivel.moe/) `pixivel.py`
 
 注意可能有时效性！
-
 
